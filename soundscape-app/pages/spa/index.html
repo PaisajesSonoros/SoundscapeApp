@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hojas de Estilos de la interfaz-->
+     <link rel="stylesheet" href="../../styles/style.css">
+     <link rel="stylesheet" href="../../styles/style-nav.css">
+    <title>Soundscape App</title>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="nav container" style="height: 50px;width: 100%;">
+    <span class="nav__logo">
+        <img style="height: 30px;" src="../../attachments/images/urjc/logo_urjc.png" alt="">
+    </span>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link" onclick="ContactPopupScreen()"><img id="nav__img" src="../../attachments/icons/home.png" alt="" srcset=""></a>
+      </li>
+      <li class="nav__item" id="dropdown">
+            <a class="nav__link">Idioma</a>
+            <div class="dropdown-content">
+              <a href="../spa/index.html"><img id="img_languaje" src="../../attachments/images/language/spanish_flag.png" alt="Spa" srcset=""></a>
+              <a href="../eng/index.html"><img id="img_languaje" src="../../attachments/images/language/english_flag.png" alt="Eng" srcset=""></a>
+            </div>
+      </li>     
+      <li class="nav__item">
+        <a href="#" class="nav__link" onclick="SettingsPopupScreen()">Ajustes</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link" onclick="ContactPopupScreen()">Contacto</a>
+      </li>
+
+      <li class="nav__item">
+        <a href="#" class="nav__link" onclick="HelpPopupScreen()">Ayuda</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link" ></a>
+      </li>
+    </ul>
+  </nav>
+  <main style="display: flex; flex-wrap: wrap; align-items: center;align-content: center;">
+    <!--Crear Cuestionario-->
+    <div class="card">
+      <div class="card__avatar">
+        <img src="../../attachments/icons/create_quiz.png" width="100" height="100">
+      </div>
+      <div class="card__title">Crear Cuestionario</div>
+      <div class="card__subtitle">
+        Esta función sirve para generar un cuestionario introduciendo archivos de audio
+         y si es necesario, también se puede introducir archivos con apoyo visual.<br>
+        Una vez generado, se podrá rellenar en la sección "Rellenar Cuestionario".<br>
+        El sistema de creación es muy sencillo, se selecciona el número de lugares
+                                y el número de sistemas de grabación o grabaciones distintas por lugar. <br><br>
+        Pulsa en "Más Info" si quieres una mayor explicación.  
+      </div>
+      <div class="card__wrapper">
+          <button class="card__btn">Más&nbsp;Info</button>
+          <button class="card__btn card__btn-solid">Empezar</button>
+      </div>
+    </div>
+    <!--Rellenar Cuestionario-->
+    <div class="card">
+      <div class="card__avatar">
+        <img src="../../attachments/icons/fill_quiz.png" width="100" height="100">
+      </div>
+      <div class="card__title">Rellenar Cuestionario</div>
+      <div class="card__subtitle">
+        Después de crear los cuestionarios se pueden estos rellenar por parte de los partipantes. Los cuestionarios que muestra esta aplicación son <b>"Cuestionarios de Paisajes Sonoros".</b>  <br>
+        <b>Un cuestionario sonoro es una lista de preguntas con el fin de evaluar el entorno acústico de un lugar tal y como es percibido, experimentado o entendido por las personas.</b><br><br>
+        Pulsa en "Más Info" si quieres una mayor explicación. <br>
+        
+      </div>
+      <div class="card__wrapper">
+          <button class="card__btn">Más&nbsp;Info</button>
+          <button class="card__btn card__btn-solid">Empezar</button>
+      </div>
+    </div>
+    <!--Mostrar Resultado-->
+    <div class="card">
+      <div class="card__avatar">
+        <img src="../../attachments/icons/data-analytics.png" width="80" height="80">
+      </div>
+      <div class="card__title">Mostrar Resultados</div>
+      <div class="card__subtitle">
+        Esta función sirve para comprobar y mostrar los Resultados de un cuestionario creado. Este menú sirve para ayudar al analisis y obtención de conclusiones al encuestador.<br><br>
+        En este apartado aparecerán gráficas y tablas con los datos de cada pregunta. En función del número de respuestas, cada apartado será más detallado.
+        
+          <br><br>
+        Pulsa en "Más Info" si quieres una mayor explicación.  
+      </div>
+      <div class="card__wrapper">
+          <button class="card__btn">Más&nbsp;Info</button>
+          <button class="card__btn card__btn-solid">Empezar</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
