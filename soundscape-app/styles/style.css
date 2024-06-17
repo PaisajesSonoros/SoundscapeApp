@@ -37,3 +37,11 @@ main{
   justify-content: center;
 }
 
+button:hover{
+  cursor: pointer;
+}
+.about_us p{
+  padding-left: 10rem;
+  padding-right: 10rem;
+  text-align: justify;
+}
