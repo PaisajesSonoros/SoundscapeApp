@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hojas de Estilos de la interfaz-->
+     <link rel="stylesheet" href="../../styles/style.css">
+     <link rel="stylesheet" href="../../styles/style-index.css">
+     <link rel="stylesheet" href="../../styles/style-nav.css">
+    <title>Soundscape App</title>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="nav container" style="height: 50px;width: 100%;">
+    <span class="nav__logo">
+        <img style="height: 30px;" src="../../attachments/images/urjc/logo_urjc.png" alt="">
+    </span>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="../spa/index.html" class="nav__link" onclick="ContactPopupScreen()"><img id="nav__img" src="../../attachments/icons/home.png" alt="" srcset=""></a>
+      </li>
+      <li class="nav__item" id="dropdown">
+            <a class="nav__link">Language</a>
+            <div class="dropdown-content">
+              <a href="../spa/index.html"><img id="img_languaje" src="../../attachments/images/language/spanish_flag.png" alt="Spa" srcset=""></a>
+              <a href="../eng/index.html"><img id="img_languaje" src="../../attachments/images/language/english_flag.png" alt="Eng" srcset=""></a>
+            </div>
+      </li>     
+      <li class="nav__item">
+        <a href="" class="nav__link" onclick="SettingsPopupScreen()">Setup</a>
+      </li>
+      <li class="nav__item">
+        <a href="" class="nav__link" onclick="ContactPopupScreen()">Contact</a>
+      </li>
+
+      <li class="nav__item">
+        <a href="help.html" class="nav__link" onclick="HelpPopupScreen()">Help</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link" ></a>
+      </li>
+    </ul>
+  </nav>
+  <main style="display: flex; flex-wrap: wrap; align-items: center;align-content: center;">
+    <!--Crear Cuestionario-->
+    <div class="card">
+      <div class="card__avatar">
+        <img src="../../attachments/icons/create_quiz.png" width="100" height="100">
+      </div>
+      <div class="card__title">Create Questionnaire</div>
+      <div class="card__subtitle">
+        This function is used to generate a questionnaire by introducing audio files
+         and if necessary, you can also enter files with visual support.<br><br>        
+        Once generated, it can be filled in the "Fill Questionnaire" section.<br><br>
+
+        The creation system is very simple, you select the number of places
+        and the number of recording systems or different recordings per location. <br><br>
+        
+        Click on "More Info" if you want further explanation. 
+      </div>
+      <div class="card__wrapper">
+          <button class="card__btn">More&nbsp;Info</button>
+          <button class="card__btn card__btn-solid">Start</button>
+      </div>
+    </div>
+    <!--Rellenar Cuestionario-->
+    <div class="card">
+      <div class="card__avatar">
+        <img src="../../attachments/icons/fill_quiz.png" width="100" height="100">
+      </div>
+      <div class="card__title">Fill Questionnaire</div>
+      <div class="card__subtitle">
+        After creating the questionnaires, they can be filled by the participants. The questionnaires that this application shows are <b>"Soundscape Questionnaires".</b><br><br>
+        <b>A soundscape questionnaire has a list of questions in order to evaluate the acoustic environment of a place as it is perceived, experienced or understood by people.</b><br><br>
+        Each questionnaire completed will be stacked within the application or, failing that, it can be exported in a JSON. <br><br>
+        Click on "More Info" if you want further explanation. <br>
+        
+      </div>
+      <div class="card__wrapper">
+        <button class="card__btn">More&nbsp;Info</button>
+        <button class="card__btn card__btn-solid">Start</button>
+      </div>
+    </div>
+    <!--Mostrar Resultado-->
+    <div class="card">
+      <div class="card__avatar">
+        <img src="../../attachments/icons/data-analytics.png" width="80" height="80">
+      </div>
+      <div class="card__title">Show Data</div>
+      <div class="card__subtitle">
+        This function is used to check and display the Results of a created questionnaire. This menu serves to help the interviewer analyze and obtain conclusions.<br><br>
+        In this section, graphs and tables will appear with the data for each question. Depending on the number of responses, each section will be more detailed.
+        
+          <br><br>
+        In addition, at the beginning a small summary will be shown with the generic information of the questionnaires. <br><br>
+        Click on "More Info" if you want further explanation. 
+      </div>
+      <div class="card__wrapper">
+        <button class="card__btn">More&nbsp;Info</button>
+        <button class="card__btn card__btn-solid">Start</button>
+      </div>
+    </div>
+  </main>
+  <article style="display:block;">
+    <h1>About us</h1>
+    <hr>
+    <p>This project was developed by <b>Manuel Salcedo</b> in the completion of his Final Degree Project:
+       <b>"Perceptual evaluation of remote soundscapes through an application"</b>
+       of the degree <b>Audiovisual and Multimedia Systems Engineering</b>. 
+       The tutor of this project was <b>Roberto San Millán Castillo</b>. It was presented in the 2022/2023 academic year.
+    </p>
+    <p>The objective of developing this application was to allow the mass collection of questionnaires remotely, facilitating their collection.</p>
+    <p>
+        The development of this software seeks to improve existing services to
+        collect the questionnaires facilitating whether used remotely or
+        used in a laboratory and with a supervisor.
+    </p>
+    <p>
+        SoundscapeApp is divided into three main parts: <b>Create Questionnaire</b>, <b> Fill data by the participants</b> and <b>Show results.</b>
+    </p>
+    <hr>
+    <h2>Extra Options</h2>
+    <hr>
+    <div class="xtra-options">
+      <div class="option-xtra">
+        <h3 style="text-align: center;">Administrator Option</h3>
+        <p>With this option you can hide some options when carrying out massive data collection, such as creating a questionnaire or showing results.</p>
+      </div>
+      <div class="option-xtra">
+        <h3 style="text-align: center;">Join Questionnaires</h3>
+        <p>If many individual questionnaires of the same type are carried out, they can all be united in the same file. In this way, the number of files is reduced and possible losses are avoided..</p>
+      </div>
+      <div class="option-xtra">
+        <h3 style="text-align: center;">Help/Support</h3>
+        <p>Within the "Help" option you can see a guide with additional information on each relevant element. The objective is to serve as a reference to be able to correctly carry out each step.</p>
+      </div>
+      <div class="option-xtra">
+        <h3 style="text-align: center;">Format App</h3>
+        <p>It may be the case that you want to delete the information that appears in the application. For this, there is this option. Once used, the application is formatted.</p>
+      </div>
+    </div>
+  </article>
+
+</body>
+</html>
