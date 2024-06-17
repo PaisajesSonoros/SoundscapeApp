@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Hojas de Estilos de la interfaz-->
      <link rel="stylesheet" href="../../styles/style.css">
+     <link rel="stylesheet" href="../../styles/style-index.css">
      <link rel="stylesheet" href="../../styles/style-nav.css">
     <title>Soundscape App</title>
 </head>
@@ -16,7 +17,7 @@
     </span>
     <ul class="nav__list">
       <li class="nav__item">
-        <a href="#" class="nav__link" onclick="ContactPopupScreen()"><img id="nav__img" src="../../attachments/icons/home.png" alt="" srcset=""></a>
+        <a href="../spa/index.html" class="nav__link" onclick="ContactPopupScreen()"><img id="nav__img" src="../../attachments/icons/home.png" alt="" srcset=""></a>
       </li>
       <li class="nav__item" id="dropdown">
             <a class="nav__link">Idioma</a>
@@ -49,8 +50,8 @@
       <div class="card__title">Crear Cuestionario</div>
       <div class="card__subtitle">
         Esta función sirve para generar un cuestionario introduciendo archivos de audio
-         y si es necesario, también se puede introducir archivos con apoyo visual.<br>
-        Una vez generado, se podrá rellenar en la sección "Rellenar Cuestionario".<br>
+         y si es necesario, también se puede introducir archivos con apoyo visual.<br><br>
+        Una vez generado, se podrá rellenar en la sección "Rellenar Cuestionario".<br><br>
         El sistema de creación es muy sencillo, se selecciona el número de lugares
                                 y el número de sistemas de grabación o grabaciones distintas por lugar. <br><br>
         Pulsa en "Más Info" si quieres una mayor explicación.  
@@ -67,8 +68,9 @@
       </div>
       <div class="card__title">Rellenar Cuestionario</div>
       <div class="card__subtitle">
-        Después de crear los cuestionarios se pueden estos rellenar por parte de los partipantes. Los cuestionarios que muestra esta aplicación son <b>"Cuestionarios de Paisajes Sonoros".</b>  <br>
+        Después de crear los cuestionarios se pueden estos rellenar por parte de los partipantes. Los cuestionarios que muestra esta aplicación son <b>"Cuestionarios de Paisajes Sonoros".</b><br><br>
         <b>Un cuestionario sonoro es una lista de preguntas con el fin de evaluar el entorno acústico de un lugar tal y como es percibido, experimentado o entendido por las personas.</b><br><br>
+        Cada cuestionario realizado se irá apilando dentro de la aplicación o en su defecto, se podrá exportar en un JSON. <br><br>
         Pulsa en "Más Info" si quieres una mayor explicación. <br>
         
       </div>
@@ -88,6 +90,7 @@
         En este apartado aparecerán gráficas y tablas con los datos de cada pregunta. En función del número de respuestas, cada apartado será más detallado.
         
           <br><br>
+        Además, al principio se mostrará un pequeño resumen con la información genérica de los cuestionarios <br><br>
         Pulsa en "Más Info" si quieres una mayor explicación.  
       </div>
       <div class="card__wrapper">
@@ -96,5 +99,46 @@
       </div>
     </div>
   </main>
+  <article style="display:block;">
+    <h1>¿Quiénes Somos?</h1>
+    <hr>
+    <p>Este proyecto fue desarrollado por <b>Manuel Salcedo</b> en la realización del Trabajo Final de Grado:
+       <b>"Evaluación perceptual de paisajes sonoros en remoto a través de una aplicación"</b>
+      de la titulación <b>Ingeniería en Sistemas Audiovisuales y Multimedia</b>. 
+      El tutor de dicho trabajo fue <b>Roberto San Millán Castillo</b>. Fue presentando en el curso académico 2022/2023.
+    </p>
+    <p>El objetivo del desarrollo de esta aplicación fue permitir la recogida masiva de cuestionarios en remoto, facilitando su recogida.</p>
+    <p>
+      El desarrollo de este software busca mejorar los servicios ya existentes para
+       recoger los cuestionarios facilitando tanto si se usa de forma remota como si se
+       usa en un laboratorio y con un supervisor.
+    </p>
+    <p>
+       SoundscapeApp se divide en tres partes principales: <b>Creación del cuestionario</b>, <b>Introducción
+       de datos por parte de los participantes </b>y <b>Muestra de los resultados.</b>
+    </p>
+    <hr>
+    <h2>¿Qué opciones extra tiene la aplicación?</h2>
+    <hr>
+    <div class="xtra-options">
+      <div class="option-xtra">
+        <h3 style="text-align: center;">Opción administrador</h3>
+        <p>Con esta opción se puede esconder algunas opciones que a la hora de realizar una recogida masiva de datos como por ejemplo el crear un cuestionario o mostrar resultados.</p>
+      </div>
+      <div class="option-xtra">
+        <h3 style="text-align: center;">Unir cuestionarios</h3>
+        <p>Si se realizan muchos cuestionarios sueltos de un mismo tipo estos se pueden unir todos en un mismo fichero. De esta forma se reduce la cantidad de archivos y se evita posibles pérdidas.</p>
+      </div>
+      <div class="option-xtra">
+        <h3 style="text-align: center;">Ayuda</h3>
+        <p>Dentro de la opción "Ayuda" se podrá ver una guía con información adicional de cada elemento relevante. El objetivo es servir de referencia para poder realizar correctamente cada paso.</p>
+      </div>
+      <div class="option-xtra">
+        <h3 style="text-align: center;">Resetear Aplicación</h3>
+        <p>Puede darse el caso de que se desee eliminar la información que aparece en la aplicación. Para ello, existe esta opción. Una vez usada, se formatea la aplicación.</p>
+      </div>
+    </div>
+  </article>
+
 </body>
 </html>
